@@ -213,6 +213,7 @@ function spawnEnemy() {
         if(score > melhorScore)
             {
                 localStorage.setItem("score", score)
+                melhorScore = score;
                 msMenu.textContent = `${melhorScore}`
             }
             
