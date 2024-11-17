@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    padding: 0;
+    gap: 3vh;
+}
+
+#game {
+    position: relative;
+    width: 98vw;
+    height: 98vh;
+    max-width: 500px;
+    border: 4px solid white;
+    overflow: hidden;
+    padding: 0;
+    background-image: url("./assets/environment/space__r1437994661.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.enemy {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.bullet 
+{
+    
+    position: absolute;
+    width: 5px;
+    height: 15px;
+    background-color: yellow;
+    border-radius: 50%;
+    z-index: 2;
+    
+
+}
+.player {
+    position: absolute;
+    width: 80px;
+    height: 80px; 
+    bottom: 2px;
+    left: 185px;
+    background-image: url('./assets/player/ship.png'); /* Replace with your PNG file path */
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    margin: 0px;
+    padding: 0px;
+}
+
+.engine {
+    width: 48px; 
+    height: 48px; 
+    background-image: url('./assets/player/engine.png');
+    background-repeat: no-repeat;
+    background-position: 0 0; 
+    position: absolute;
+    left: 185px;
+    bottom: 18px;
+}
+
+.enemy {
+    position: absolute;
+    height: 80px;
+    background-color: transparent;
+    background-image: url('./assets/enemies/asteroide.png'); /* Replace with your PNG file path */
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    margin: 0px;
+    padding: 0px;
+}
+
+.bullet {
+    width: 5px;
+    height: 10px;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+.menu
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    gap: 2vh;
+    z-index: 10;
+    background-color: rgb(27, 33, 73);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 60%; 
+    max-width: 300px; 
+    height: auto;
+    font-size: 2rem;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+
+.start
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14, 14, 19);
+    width: 60%; 
+    height: 10vh;
+    border-radius: 10px;
+    font-size: 1.5rem; 
+
+}
+
+.score
+{
+    position: absolute;
+    z-index: 10;
+    font-family: monospace;
+}
+
