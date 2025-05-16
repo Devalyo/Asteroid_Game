@@ -198,7 +198,7 @@ function spawnEnemy() {
             enemiesInterval = setInterval(spawnEnemy, 500);
         }, 3000);
         musica = new Audio('./veridis.mp3');
-        musica.volume = 0.1;
+        musica.sound = 0.1;
         musica.play();
     }
     
